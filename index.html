@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class = 'container'>
+      <h1> National Park Finder </h1>
+        <form id = "input">
+          <input type ="text" class ='numOfResults' placeholder ="Enter state CA, WA, etc..." >
+          <input type ="number" class = 'stateAbv' placeholder="Enter number of results you'd like" >
+          <button type = "submit" class = "submit"> Submit </button>
+        </form>
+    </div>
+
+    <div class = 'results hidden'>
+      <h2>Search Results</h2>
+        <ul  class = "result-list"> </ul>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

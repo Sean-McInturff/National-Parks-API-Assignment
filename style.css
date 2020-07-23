@@ -1,0 +1,15 @@
+body{
+  text-align:center;
+}
+
+input{
+  width: 200px;
+}
+
+li{
+  list-style:none;
+}
+
+.hidden{
+  display:none;
+}
