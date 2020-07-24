@@ -12,10 +12,10 @@ function formatQueryParams(params){
 }
 
 //Fetch info from the NPS API
-function findParks(query, limit =10) {
+function findParks(query, limit) {
   const params = {
     stateCode: query,
-    limit,
+    limit: limit,
     api_Key: apiKey,
   };
   const queryString = formatQueryParams(params)
@@ -43,7 +43,7 @@ function displayResults(responseJson) {
       `<li>
       <h3>${responseJson.data[i].fullName}</h3>
       <p>${responseJson.data[i].description}</p>
-      <p><a href=${responseJson.data[i].url}</a> Park Website</p>
+      <p><a href=${responseJson.data[i].url} target=_blank</a> Park Website</p>
       </li>`
     )}
     $('.results').removeClass('hidden');
